@@ -1,18 +1,38 @@
-# Tratamento-de-dados
+# **READ.ME**
 
-## Tratamento de dados com pandas
+### Este repositório contém um script Python para realizar análises e manipulações de dados relacionados a lojas, PIB e população de municípios brasileiros. Abaixo estão listadas as etapas realizadas pelo script:
 
-  1. Usando as lojas de onde eu trabalho, peguei informações da base de dados do IBGE de PIB e População dos municipios;
-     
-  2. Fiz o tratamento dos dados que colhi doi IBGE e fiz um "merge" de PIB e População
 
-  3. Criei uma nova coluna com a divisão entre PIB e População para encontrar o Pib Per Capta
+1. **Lendo e tratando a planilha de lojas:**
+   - O script lê os arquivos de Excel contendo informações sobre lojas, PIB e população de municípios.
 
-  4. Tendo o PIB Per Capta, agora podemos criar analise e sabermos onde, de acordo com nosso padrão e nossos resultados atuais, seria mais viavel abrir novas lojas para termos os mesmos resultados ou então termos resultados melhors. 
+2. **Juntando PIB e população em uma única planilha de acordo com a cidade:**
+   - Os dados de PIB e população são mesclados com base no nome da cidade.
 
-## Requirements:
+3. **Calculando o PIB per capita e criando a coluna correspondente:**
+   - É calculado o PIB per capita com duas casas decimais e adicionada uma nova coluna com esse valor.
 
-- **Python 3.x**
+4. **Separando UF (Unidade Federativa) da cidade:**
+   - Os nomes das cidades são ajustados para separar o nome da cidade do nome da UF.
 
-- **pandas**
+5. **Renomeando colunas das planilhas:**
+   - As colunas das planilhas são renomeadas para facilitar o merge posterior.
 
+6. **Removendo espaços em branco das strings:**
+   - Espaços em branco são removidos das strings para evitar erros durante o processo de junção dos dados.
+
+7. **Criando a planilha onde PIB e população se juntarão à planilha de lojas:**
+   - As planilhas são mescladas com base no nome da cidade.
+
+8. **Removendo coluna adicional "UF" resultante da junção:**
+   - Uma coluna adicional "UF" é removida da planilha resultante.
+
+9. **Salvando o resultado em um novo arquivo Excel:**
+   - O resultado final é salvo em um novo arquivo Excel.
+
+10. **Filtrando municípios para lojas com base em critérios específicos:**
+    - São filtrados os municípios com população superior a 200.000 habitantes e PIB per capita acima de 60.
+
+Para utilizar o script, certifique-se de ter as bibliotecas pandas instaladas e os arquivos de Excel com os dados correspondentes. Após a execução do script, você terá uma planilha contendo as informações das lojas, PIB, população e PIB per capita dos municípios, além de uma filtragem específica dos municípios para lojas.
+
+Para mais detalhes sobre as etapas e o funcionamento do script, consulte o código-fonte fornecido neste repositório.
