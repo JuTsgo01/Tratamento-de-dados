@@ -30,8 +30,8 @@
 9. **Salvando o resultado em um novo arquivo Excel:**
    - O resultado final é salvo em um novo arquivo Excel.
 
-10. **Filtrando municípios para lojas com base em critérios específicos:**
-    - São filtrados os municípios com população superior a 200.000 habitantes e PIB per capita acima de 60.
+10. **Filtrando municípios para lojas com potenciais e com base em critérios específicos:**
+    - São filtrados os municípios com população superior a 150.000 habitantes e PIB per capita acima de 50.
 
 Para utilizar o script, certifique-se de ter as bibliotecas pandas instaladas e os arquivos de Excel com os dados correspondentes. Após a execução do script, você terá uma planilha contendo as informações das lojas, PIB, população e PIB per capita dos municípios, além de uma filtragem específica dos municípios para lojas.
 
