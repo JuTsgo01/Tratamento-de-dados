@@ -10,7 +10,7 @@
    - Os dados de PIB e população são mesclados com base no nome da cidade.
 
 3. **Calculando o PIB per capita e criando a coluna correspondente:**
-   - É calculado o PIB per capita com duas casas decimais e adicionada uma nova coluna com esse valor.
+   - E calculado o PIB per capita com duas casas decimais e adicionada uma nova coluna com esse valor.
 
 4. **Separando UF (Unidade Federativa) da cidade:**
    - Os nomes das cidades são ajustados para separar o nome da cidade do nome da UF.
